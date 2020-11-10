@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Agency</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_op">ActivityOp</string>
+    <string name="title_activity_options">activity_options</string>
+    <string name="title_activity_add_user">new user</string>
+    <string name="_activity_add_activity">start activity</string>
+    <string name="title_activity_add_activity">end user</string>
+</resources>

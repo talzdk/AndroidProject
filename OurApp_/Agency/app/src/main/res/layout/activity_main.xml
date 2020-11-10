@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="il.ac.jct.tazadok.agency.Controller.MainActivity"
+    android:background="@drawable/t2a6c8bd2651cb3ccc084c42d401a17e4"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/textView"
+        android:autoText="false"
+        android:fontFamily="casual"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/logInButton"
+        android:layout_alignStart="@+id/logInButton"
+        android:layout_marginTop="57dp"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:layout_alignStart="@+id/editTextUserName"
+        android:textColor="@color/colorAccent"
+        android:hint="Password"
+        android:fontFamily="casual"
+        android:textColorHint="@color/colorAccent"
+        android:layout_alignEnd="@+id/editTextUserName"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextUserName"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Username" />
+
+    <Button
+        android:text="sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_user_button"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="casual"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="not registed? create an acount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorAccent"
+        android:layout_above="@+id/add_user_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:text="log in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logInButton"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="casual"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/add_user_button"
+        android:layout_marginBottom="29dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/rem"
+        android:onClick="remeberMe()" />
+
+</RelativeLayout>

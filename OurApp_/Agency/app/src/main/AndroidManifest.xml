@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="il.ac.jct.tazadok.agency">
+<uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Controller.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name=".Controller.MyContentProvider"
+            android:authorities="il.ac.jct.tazadok.agency"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".Model.backend.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".Model.backend.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="il.ac.jct.tazadok.agency.AddActivity_" />
+                <action android:name="il.ac.jct.tazadok.agency.AddBuisness" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name=".Controller.AddUser"
+            android:label="@string/title_activity_add_user"
+            android:parentActivityName=".Controller.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="il.ac.jct.tazadok.agency.Controller.MainActivity" />
+        </activity>
+        <activity android:name=".Controller.AddBusiness" />
+        <activity android:name=".Controller.AddActivity_" />
+        <activity android:name=".Controller.ActivityOptions"></activity>
+    </application>
+
+</manifest>

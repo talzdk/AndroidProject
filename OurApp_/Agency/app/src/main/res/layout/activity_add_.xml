@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/act"
+    tools:context="il.ac.jct.tazadok.agency.Controller.AddActivity_">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextDescription"
+        android:layout_below="@+id/editTextBusinessId"
+        android:layout_alignLeft="@+id/editTextBusinessId"
+        android:layout_alignStart="@+id/editTextBusinessId"
+        android:hint="Description"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorBU"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextCost"
+        android:layout_below="@+id/editTextDescription"
+        android:hint="Price"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorBU"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextBusinessId"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorBU"
+        android:hint="BusinessId" />
+
+    <TextView
+        android:text="New Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:fontFamily="casual"
+        android:textSize="36sp"
+        android:textColor="@color/colorB"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextCountryName"
+        android:hint="Country"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorBU"
+        android:layout_below="@+id/editTextCost">
+
+    </EditText>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerType"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="41dp"
+        android:layout_below="@+id/editTextCountryName"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Addbutton"
+        android:fontFamily="casual"
+        android:textColor="@color/colorBU"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/spinnerType" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStartDate"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textColor="@color/colorBU"
+        android:textStyle="bold"
+        android:text="Choose Date Here"
+        android:layout_above="@+id/textViewFinishDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:text="Choose Date Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFinishDate"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textColor="@color/colorBU"
+        android:textStyle="bold"
+        android:layout_above="@+id/Addbutton"
+        android:layout_alignStart="@+id/textViewStartDate" />
+
+    <TextView
+        android:text="End Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textColor="@color/colorBU"
+        android:textStyle="bold"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Start Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textColor="@color/colorBU"
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/textViewStartDate"
+        android:layout_alignBottom="@+id/textViewStartDate"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        android:layout_above="@+id/editTextCountryName"
+        android:layout_alignStart="@+id/textViewStartDate" />
+
+</RelativeLayout>
